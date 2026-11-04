@@ -50,3 +50,12 @@ sourcetype="fraud_detection.csv" fraud=1 | stats count by age, merchant | sort -
 **4. Building the dashboard**
 
 Dashboards > Create New Dashboard > title Fraud Detection Dashboard > Classic Dashboards > Create. 
+
+
+**5. Findings**
+Gender with the most fraudulent activity: to complete, in category: to complete
+Age group with the most fraudulent activity: to complete, at merchant: to complete
+Observations on month (step) and category trends: to complete
+**6. Deliverables**
+Fraud_Detection_Dashboard.pdf: exported dashboard
+screenshots/: Interesting Fields view and dashboard panels
