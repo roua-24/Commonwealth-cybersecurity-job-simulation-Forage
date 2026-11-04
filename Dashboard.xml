@@ -1,0 +1,81 @@
+<dashboard version="1.1">
+  <label>Fraud Detection Dashboard</label>
+  <row>
+    <panel>
+      <title>Count by Category</title>
+      <chart>
+        <search><query>sourcetype="fraud_detection.csv" | stats count by category</query><earliest>0</earliest><latest></latest></search>
+        <option name="charting.chart">bar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Count of Fraudulent Transactions</title>
+      <chart>
+        <search><query>sourcetype="fraud_detection.csv" | stats count by fraud</query><earliest>0</earliest><latest></latest></search>
+        <option name="charting.chart">bar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Count by Age</title>
+      <chart>
+        <search><query>sourcetype="fraud_detection.csv" | stats count by age</query><earliest>0</earliest><latest></latest></search>
+        <option name="charting.chart">column</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Count by Merchant</title>
+      <chart>
+        <search><query>sourcetype="fraud_detection.csv" | stats count by merchant</query><earliest>0</earliest><latest></latest></search>
+        <option name="charting.chart">bar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Fraud Detected by Age</title>
+      <chart>
+        <search><query>sourcetype="fraud_detection.csv" fraud=1 | stats count by age</query><earliest>0</earliest><latest></latest></search>
+        <option name="charting.chart">column</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Fraud Detected by Category</title>
+      <chart>
+        <search><query>sourcetype="fraud_detection.csv" fraud=1 | stats count by category</query><earliest>0</earliest><latest></latest></search>
+        <option name="charting.chart">bar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Fraud Detected by Step (Month)</title>
+      <chart>
+        <search><query>sourcetype="fraud_detection.csv" fraud=1 | stats count by step</query><earliest>0</earliest><latest></latest></search>
+        <option name="charting.chart">column</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Fraud Detected by Gender</title>
+      <chart>
+        <search><query>sourcetype="fraud_detection.csv" fraud=1 | stats count by gender</query><earliest>0</earliest><latest></latest></search>
+        <option name="charting.chart">pie</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Gender with Most Fraud, by Category</title>
+      <table>
+        <search><query>sourcetype="fraud_detection.csv" fraud=1 | stats count by gender, category | sort - count</query><earliest>0</earliest><latest></latest></search>
+      </table>
+    </panel>
+    <panel>
+      <title>Age Group with Most Fraud, by Merchant</title>
+      <table>
+        <search><query>sourcetype="fraud_detection.csv" fraud=1 | stats count by age, merchant | sort - count</query><earliest>0</earliest><latest></latest></search>
+      </table>
+    </panel>
+  </row>
+</dashboard>
