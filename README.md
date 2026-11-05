@@ -145,3 +145,7 @@ All payloads are for the PortSwigger training environment only.
 7. Appendix A to K: one completion screenshot per lab
 ### Files
 - `Penetration_Testing_Report.pdf`
+### Resources
+ 
+- PortSwigger Web Security Academy: portswigger.net/web-security
+- OWASP Top 10 and OWASP Web Security Testing Guide: owasp.org
