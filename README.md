@@ -56,17 +56,23 @@ sourcetype="fraud_detection.csv" fraud=1 | stats count by age, merchant | sort -
 
 ### 3. Dashboard
 
-Create `Dashboards > Create New Dashboard` (Classic), open **Source**, and paste the contents of [`dashboard.xml`](dashboard.xml). Export with `Export > Export PDF`.
+Create `Dashboards > Create New Dashboard` (Classic), open **Source**, and paste the contents of [`Dashboard.xml`](Dashboard.xml). Export with `Export > Export PDF`.
 
 ### 4. Findings
 
 | Question | Answer |
 |---|---|
-| Gender with most fraud, and category | _to complete_ |
-| Age group with most fraud, and merchant | _to complete_ |
+| Gender with most fraud, and category | female;49 vs 35 for male almost all in `es_transportation`|
+| Age group with most fraud, and merchant | 1; 36 cases , `M348934600` |
 
 ### 5. Files
 
 - `dashboard.xml`: dashboard source
 - `Fraud_Detection_Dashboard.pdf`: exported dashboard
 - `screenshots/`: Interesting Fields view and dashboard panels
+
+## Task 2:Responding to a Cyber Incident 
+**Goal:** act as cybersecurity analyst; identify the attack and lead the response: contain, resolve, recover and learn.
+**Scenario Summary:** staff received emails that appeared to come from the bank (HR) asking them to  download a file. Some users who opened the Word document could not read it, which points to malware.
+**Files:** 
+`response example`
