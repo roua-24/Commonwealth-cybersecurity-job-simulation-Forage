@@ -76,3 +76,7 @@ Create `Dashboards > Create New Dashboard` (Classic), open **Source**, and paste
 **Scenario Summary:** staff received emails that appeared to come from the bank (HR) asking them to  download a file. Some users who opened the Word document could not read it, which points to malware.
 **Files:** 
 `response example`
+## Task 3: Security Awareness 
+**Goal:** design an infographic for fellow employees on password security, based on advise from the Australian Cyber Security Center (ACSC) 
+**Tools:** Canva
+**Files:** [`password_security_infographic.pdf`](password_securityçinfographic.pdf)
